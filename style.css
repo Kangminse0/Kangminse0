@@ -1,0 +1,139 @@
+/* Monochrome with one accent color - AI Engineer Portfolio */
+:root {
+    --bg: #fafafa;
+    --bg-subtle: #f5f5f5;
+    --text: #212121;
+    --text-light: #666666;
+    --accent: #3b82f6; /* Blue accent color */
+    --accent-hover: #2563eb;
+    --border: #e5e5e5;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Header */
+header {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 400;
+}
+
+/* Intro Section */
+.intro {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Badges */
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--white);
+}
+
+.badge span {
+    margin-left: 0.3rem;
+}
+
+/* Skills Section */
+.skills {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.skills h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.skills li {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    header h1 { font-size: 2rem; }
+    .badge { padding: 0.4rem 0.8rem; font-size: 0.75rem; }
+    .skills ul { gap: 1rem; }
+    .skills li { font-size: 0.8rem; }
+}
